@@ -149,7 +149,8 @@ h4 {
 }
 
 .vspace {
-    padding: 3px;
+    /* padding: 3px; */
+    padding: 13px; 
 }
 
 .list {
