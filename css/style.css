@@ -189,6 +189,12 @@ li span {
     color: #000;
 }
 
+li span.quote {
+    font-family: 'Titillium Web', monospace;
+        font-size: calc(13px * 1.25);
+	font-style: italic;
+}
+
 .sep {
 	position: fixed;
 	margin-left: -23px;
