@@ -1,10 +1,10 @@
-body { 	 
+body {
     background-image: url(../img/1234.png);
     background-position: center right;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-    background-color: #FFF;  
+    background-color: #FFF;
     font-family: 'Titillium Web', monospace;
     font-size: calc(13px * 1.25);
     color: #000;
@@ -27,12 +27,12 @@ body {
     z-index: 999;
 }
 
-div.block1, 
-div.block2, 
-div.block3, 
-div.block4, 
-div.block5, 
-div.block6, 
+div.block1,
+div.block2,
+div.block3,
+div.block4,
+div.block5,
+div.block6,
 div.block7 {
 	position: fixed;
 	background-color: rgba(0,0,0,0);
@@ -43,7 +43,7 @@ div.block7 {
     left: 50px;
     top: 50px;
     bottom: 0;
-    overflow-y: auto; 
+    overflow-y: auto;
 }
 
 .buttonclose{
@@ -118,7 +118,7 @@ h1, h2 {
     margin-left: 23px;
 }
 
-h3:hover { 
+h3:hover {
     color: #b565a7;
     cursor: pointer;
     transition: all 0.3s linear;
@@ -151,7 +151,7 @@ h4 {
 
 .vspace {
     /* padding: 3px; */
-    padding: 13px; 
+    padding: 13px;
 }
 
 .list {
@@ -168,7 +168,7 @@ ul {
 li img {
     vertical-align: -13%;
     margin-left: 3px;
-    margin-right: 3px;	
+    margin-right: 3px;
 }
 
 img {
@@ -184,13 +184,15 @@ li em {
 }
 
 li span {
-    font-family: 'Inconsolata', sans-serif;
+    font-family: 'Inconsolata', monospace;
+    font-weight: bold;
     font-size: calc(14px * 1.25);
     color: #000;
 }
 
 li span.quote {
     font-family: 'Titillium Web', monospace;
+    font-weight: normal;
     font-size: calc(13px * 1.25);
 	font-style: italic;
 }
@@ -247,4 +249,3 @@ li span.date {
 	font-family: 'Major Mono Display', monospace;
 	font-size: calc(11px * 1.25);
 }
-
