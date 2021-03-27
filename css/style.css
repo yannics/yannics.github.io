@@ -41,8 +41,8 @@ div.block4,
 div.block5,
 div.block6,
 div.block7 {
-	position: fixed;
-	background-color: rgba(0,0,0,0);
+    position: fixed;
+    background-color: rgba(0,0,0,0);
     opacity: 0;
     margin: 0px;
     padding: 10px 20px;
@@ -214,14 +214,14 @@ li span.quote {
     font-family: 'Titillium Web', monospace;
     font-weight: normal;
     font-size: calc(13px * 1.25);
-	font-style: italic;
+    font-style: italic;
 }
 
 .sep {
-	position: fixed;
-	margin-left: -23px;
-	margin-top: -15px;
-	width: 50px;
+    position: fixed;
+    margin-left: -23px;
+    margin-top: -15px;
+    width: 50px;
     height: 35px;
 }
 
@@ -266,19 +266,73 @@ a.title {
 }
 
 li span.date {
-	font-family: 'Major Mono Display', monospace;
-	font-size: calc(11px * 1.25);
+    font-family: 'Major Mono Display', monospace;
+    font-size: calc(11px * 1.25);
 }
 
 
-#resume .Horizontal_Line { font-size:6pt;  margin-top:8mm; margin-bottom:0mm; padding:0mm; border-left-style:none; border-right-style:none; border-top-style:none; border-bottom-width:0.0399cm; border-bottom-style:double; border-bottom-color:#808080; }
-#resume p.resume-page {text-decoration:underline;font-size:19px;}  
-#resume p.resume-link {margin-left:30px;font-family: JetBrains Mono,monospace;font-size:18px;}  
-#resume p.resume-name {text-align:center ! important; font-family: JetBrains Mono,monospace;font-size:33px;font-weight:bold;}  
-#resume p.resume-subtitle {text-align:center ! important; font-family:  JetBrains Mono,monospace;font-size:23px;margin-bottom:70px;}  
-#resume div.resume-head {margin-left:30px;}  
-#resume p.quote {margin-left:30px;}  
-#resume p.resume-title {text-decoration:underline;font-weight:bold;margin-top:35px;}  
-#resume div.par {margin-bottom:20px;}  
-#resume p.footnote {font-size:13px;}  
-#resume span.link {font-family: JetBrains Mono,monospace;font-weight:normal;font-size:15px;}
+#resume .Horizontal_Line {
+    font-size:6pt;
+    margin-top:8mm;
+    margin-bottom:0mm;
+    padding:0mm;
+    border-left-style:none;
+    border-right-style:none;
+    border-top-style:none;
+    border-bottom-width:0.0399cm;
+    border-bottom-style:double;
+    border-bottom-color:#808080;
+}
+
+#resume p.resume-page {
+    text-decoration:underline;
+    font-size:19px;
+}  
+
+#resume p.resume-link {
+    margin-left:30px;
+    font-family: JetBrains Mono,monospace;
+    font-size:18px;
+}  
+
+#resume p.resume-name {
+    text-align:center ! important;
+    font-family: JetBrains Mono,monospace;
+    font-size:33px;
+    font-weight:bold;
+}  
+
+#resume p.resume-subtitle {
+    text-align:center ! important;
+    font-family: JetBrains Mono,monospace;
+    font-size:23px;
+    margin-bottom:70px;
+}  
+
+#resume div.resume-head {
+    margin-left:30px;
+}  
+
+#resume p.quote {
+    margin-left:30px;
+}  
+
+#resume p.resume-title {
+    text-decoration:underline;
+    font-weight:bold;
+    margin-top:35px;
+}  
+
+#resume div.par {
+    margin-bottom:20px;
+}  
+
+#resume p.footnote {
+    font-size:13px;
+}  
+
+#resume span.link {
+    font-family: JetBrains Mono,monospace;
+    font-weight:normal;
+    font-size:15px;
+}
