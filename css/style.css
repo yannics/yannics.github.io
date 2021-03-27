@@ -25,6 +25,13 @@ body {
 #wrapper #box7 h3
 {
     z-index: 999;
+    margin-top:20px;
+    margin-bottom:20px;
+}
+
+#wrapper #box8 h1
+{
+    z-index: 999;
 }
 
 div.block1,
@@ -42,6 +49,19 @@ div.block7 {
     right: 50px;
     left: 50px;
     top: 50px;
+    bottom: 0;
+    overflow-y: auto;
+}
+
+div.block8 {
+	position: fixed;
+	background-color: rgba(0,0,0,0);
+    opacity: 0;
+    margin: 0px;
+    padding: 20px 50px 0px 0px;
+    right: 0px;
+    left: 0px;
+    top: 0px;
     bottom: 0;
     overflow-y: auto;
 }
@@ -118,7 +138,7 @@ h1, h2 {
     margin-left: 23px;
 }
 
-h3:hover {
+h3:hover, h1:hover {
     color: #b565a7;
     cursor: pointer;
     transition: all 0.3s linear;
@@ -131,7 +151,7 @@ h3:hover {
 h1 {
     padding-top: 0;
     margin-top: 25px;
-     padding-bottom: 0;
+    padding-bottom: 0;
     margin-bottom: 13px;
 }
 
@@ -249,3 +269,34 @@ li span.date {
 	font-family: 'Major Mono Display', monospace;
 	font-size: calc(11px * 1.25);
 }
+
+
+#resume li span. { clear: both; line-height:0; width:0; height:0; margin:0; padding:0; }
+   #resume span.footnodeNumber { padding-right:1em; }
+   #resume span.annotation_style_by_filter { font-size:95%; font-family:Arial; background-color:#fff000;  margin:0; border:0; padding:0;  }
+   #resume span.heading_numbering { margin-right: 0.8rem; }* { margin:0;}
+   #resume .Horizontal_20_Line { font-size:6pt; font-family:Liberation Serif;  margin-top:0mm; margin-bottom:4.99mm; padding:0mm; border-left-style:none; border-right-style:none; border-top-style:none; border-bottom-width:0.0399cm; border-bottom-style:double; border-bottom-color:#808080; }
+   #resume .P1 { font-size:10pt; margin-left:5.98mm; margin-right:0mm; text-indent:-5.98mm; font-family:JetBrains Mono, monospace;  }
+   #resume .P10 { font-size:15pt; font-family:JetBrains Mono, monospace;  text-align:center ! important; }
+   #resume .P11 { font-size:15pt; font-family:JetBrains Mono, monospace;  }
+   #resume .P12 { font-size:24pt; font-family:JetBrains Mono, monospace;  }
+   #resume .P13 { font-size:14pt; font-family:JetBrains Mono, monospace;  margin-left:12.51mm; margin-right:0mm; line-height:200%; text-indent:0mm; }
+   #resume .P14 { font-size:12pt; font-family:Liberation Serif;  margin-left:12.51mm; margin-right:0mm; line-height:200%; text-indent:0mm; }
+   #resume .P2 { font-size:10pt; margin-left:5.98mm; margin-right:0mm; text-indent:-5.98mm; font-family:JetBrains Mono, monospace;  }
+   #resume .P3 { font-size:12pt; font-family:JetBrains Mono, monospace;  }
+   #resume .P4 { font-size:12pt; font-family:JetBrains Mono, monospace;  }
+   #resume .P5 { font-size:12pt; font-family:JetBrains Mono, monospace;  }
+   #resume .P6 { font-size:15pt; font-family:JetBrains Mono, monospace;  text-decoration:underline; }
+   #resume .P7 { font-size:12pt; font-family:JetBrains Mono, monospace;  text-decoration:underline; font-weight:bold; }
+   #resume .P8 { font-size:12pt; font-family:JetBrains Mono, monospace;  text-decoration:underline; font-weight:bold; }
+   #resume .P9 { font-size:18pt; font-family:JetBrains Mono, monospace;  text-align:center ! important; font-weight:bold; }
+   #resume .Internet_20_link { color:#b565a7; text-decoration:none; }
+   #resume .Internet_20_link a:link { color:#b565a7; text-decoration:underline; }
+   #resume .T1 { font-family:JetBrains Mono, monospace; color:#b565a7; font-weight:normal;}
+   #resume .T2 { font-family:JetBrains Mono, monospace; font-weight:bold; }
+   #resume .T3 { font-weight:bold; }
+   #resume .T4 { font-weight:bold; }
+   #resume .T5 { text-decoration:none ! important; color:#b565a7; font-weight:normal;}
+   #resume .T6 { font-style:italic; }
+   #resume .T7 { font-style:italic; }
+   #resume .T8 { font-style:italic; font-weight:bold; }
