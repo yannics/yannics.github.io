@@ -271,7 +271,7 @@ li span.date {
 }
 
 
-#resume .Horizontal_Line {
+.Horizontal_Line {
     font-size:6pt;
     margin-top:8mm;
     margin-bottom:0mm;
@@ -284,54 +284,54 @@ li span.date {
     border-bottom-color:#808080;
 }
 
-#resume p.resume-page {
+p.resume-page {
     text-decoration:underline;
     font-size:19px;
 }  
 
-#resume p.resume-link {
+p.resume-link {
     margin-left:30px;
     font-family: JetBrains Mono,monospace;
     font-size:18px;
 }  
 
-#resume p.resume-name {
+p.resume-name {
     text-align:center ! important;
     font-family: JetBrains Mono,monospace;
     font-size:33px;
     font-weight:bold;
 }  
 
-#resume p.resume-subtitle {
+p.resume-subtitle {
     text-align:center ! important;
     font-family: JetBrains Mono,monospace;
     font-size:23px;
     margin-bottom:70px;
 }  
 
-#resume div.resume-head {
+div.resume-head {
     margin-left:30px;
 }  
 
-#resume p.quote {
+p.quote {
     margin-left:30px;
 }  
 
-#resume p.resume-title {
+p.resume-title {
     text-decoration:underline;
     font-weight:bold;
     margin-top:35px;
 }  
 
-#resume div.par {
+div.par {
     margin-bottom:20px;
 }  
 
-#resume p.footnote {
+p.footnote {
     font-size:13px;
 }  
 
-#resume span.link {
+span.link {
     font-family: JetBrains Mono,monospace;
     font-weight:normal;
     font-size:15px;
