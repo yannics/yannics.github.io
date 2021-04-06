@@ -291,20 +291,20 @@ p.resume-page {
 
 p.resume-link {
     margin-left:30px;
-    font-family: 'JetBrains Mono',monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size:18px;
 }  
 
 p.resume-name {
     text-align:center ! important;
-    font-family: 'JetBrains Mono',monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size:33px;
     font-weight:bold;
 }  
 
 p.resume-subtitle {
     text-align:center ! important;
-    font-family: 'JetBrains Mono',monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-size:23px;
     margin-bottom:70px;
 }  
@@ -332,7 +332,7 @@ p.footnote {
 }  
 
 span.link {
-    font-family: 'JetBrains Mono',monospace;
+    font-family: 'JetBrains Mono', monospace;
     font-weight:normal;
     font-size:15px;
 }

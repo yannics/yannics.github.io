@@ -42,10 +42,23 @@ display: none;
 document.getElementById("date").innerHTML = Date();
 </script>
 <div class="ligne_horizontal"></div>
-<div id="box8" class="button8" title="Resume"><h1>Yann Ics</h1></div>
+
+<script>
+var isFirefox = navigator.userAgent.toLowerCase().indexOf('firefox') > -1;
+if(isFirefox)
+	{
+		document.write('<a href="resume.pdf"><h1 title="Resume">Yann Ics</h1></a>');
+    }
+    else
+    {
+        document.write('<div id="box8" class="button8" title="Resume"><h1>Yann Ics</h1></div>');
+    }
+</script>
+
 <h2>Conceptual Composer</h2>
 <div class="vspace"></div>
-<span class="cit" title="Citation traduite issue du roman SOLARIS (1961) de Stanislas Lem (1921-2006)"><em>... il n'y a pas de réponse, ... il n'y a que des choix ...</em></span><div class="ligne_horizontal"></div>
+<span class="cit" title="Citation traduite issue du roman SOLARIS (1961) de Stanislas Lem (1921-2006)"><em>... il n'y a pas de réponse, ... il n'y a que des choix ...</em></span>
+<div class="ligne_horizontal"></div>
 
 <div id="box1" class="button1"><h3>Programming</h3></div>
 <div id="box2" class="button2"><h3>Writings</h3></div>
