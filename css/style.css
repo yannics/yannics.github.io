@@ -270,6 +270,8 @@ li span.date {
     font-size: calc(11px * 1.25);
 }
 
+.lynx {display: none;}
+
 
 .Horizontal_Line {
     font-size:6pt;
