@@ -111,6 +111,12 @@ span.upd {
     font-style:italic;
 }
 
+span.nojs {
+    font-family: 'JetBrains Mono', monospace;
+    font-size: calc(11px * 1.25);
+    color: red;
+}
+
 span.cit {
     font-size: calc(11px * 1.25);
     color: #777;
