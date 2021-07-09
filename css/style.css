@@ -25,8 +25,9 @@ body {
 #wrapper #box7 h3
 {
     z-index: 999;
-	margin:5px;
-    padding:8px;
+    font-size: 16px;
+	margin:5px 13px;
+    padding:3px 8px;
 	width: max-content;
     /*float:left;*/
 }
