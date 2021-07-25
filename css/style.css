@@ -16,6 +16,10 @@ body {
     padding-left: 52px;
 }
 
+#menu {
+	max-width: 500px;
+}
+
 #wrapper #box1 h3,
 #wrapper #box2 h3,
 #wrapper #box3 h3,
@@ -29,7 +33,7 @@ body {
 	margin:3px 3px;
     padding:3px 8px;
 	width: max-content;
-    /*float:left;*/
+    float:left;
 }
 
 #wrapper #box8 h1
