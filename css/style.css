@@ -13,7 +13,7 @@ body {
 }
 
 #wrapper {
-    padding-left: 52px;
+    padding-left: 58px;
 }
 
 #menu {
@@ -289,9 +289,18 @@ a.title {
     display: none;
 }
 
-li span.ct {
+li span.date {
     font-family: 'Major Mono Display', monospace;
     font-size: calc(11px * 1.25);
+}
+
+#ip {
+    font-size: calc(11px * 1.15);
+    color: #999;
+    position:fixed;
+    bottom:10px;
+    right:20px;
+    cursor: default;
 }
 
 .lynx {display: none;}
