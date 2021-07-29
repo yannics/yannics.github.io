@@ -13,6 +13,18 @@
 <link href="https://fonts.googleapis.com/css?family=Titillium+Web:300,600&display=swap&subset=latin-ext" rel="stylesheet">
 <link href="https://fonts.googleapis.com/css?family=Major+Mono+Display&display=swap" rel="stylesheet">
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<script type="text/javascript"> 
+function display_c(){
+var refresh=1000; // Refresh rate in milli seconds
+mytime=setTimeout('display_ct()',refresh)
+}
+
+function display_ct() {
+var x = new Date()
+document.getElementById('ct').innerHTML = x;
+display_c();
+ }
+</script>
 <style media="print">
 /* <![CDATA[ */      
 body {
@@ -22,7 +34,7 @@ display: none;
 </style>
 </head>
 
-<body>
+<body onload=display_ct();>
 <div id="wrapper">
 <div id="log">
   <a href="https://www.linkedin.com/in/yann-ics-713965115"><img src="img/linkedin.png" title="LinkedIn Profile" alt="https://www.linkedin.com/in/yann-ics-713965115" /></a>
@@ -37,10 +49,10 @@ display: none;
   --> 
 </div>
 <div class="ligne_verticale"></div>
-<span id="date" class="upd"></span>
-<script>
-document.getElementById("date").innerHTML = Date();
-</script>
+
+           
+<span id='ct' class='upd'></span>
+    
 <noscript>
 <span class="nojs">Enable javascript or use a text-based web browser.</span>
 </noscript>

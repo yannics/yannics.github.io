@@ -289,7 +289,7 @@ a.title {
     display: none;
 }
 
-li span.date {
+li span.ct {
     font-family: 'Major Mono Display', monospace;
     font-size: calc(11px * 1.25);
 }
