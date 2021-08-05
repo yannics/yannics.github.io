@@ -147,7 +147,7 @@ h3 {
     -ms-transition: all 0.3s linear;
     -o-transition: all 0.3s linear;
     color: #000;
-    background-color: rgba(0,0,0,0.07);
+    background-color: rgba(0,0,0,0.04);
     border:1px solid #ccc;
 	border-radius: 3px;
 }
