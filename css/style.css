@@ -1,3 +1,5 @@
+@import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
+
 body {
     background-image: url(../img/1234.png);
     background-position: center right;
@@ -5,7 +7,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-color: #FFF;
-    font-family: 'Titillium Web', monospace;
+    font-family: 'Cutive Mono', monospace;
     font-size: calc(13px * 1.25);
     color: #000;
     margin: 0px;
@@ -85,6 +87,7 @@ div.block8 {
 #log img {
     width: auto;
     height: 23px;
+	float: left; 
 }
 
 a {
@@ -120,7 +123,7 @@ span.upd {
 }
 
 span.nojs {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Cutive Mono', monospace;
     font-size: calc(11px * 1.25);
     color: red;
 }
@@ -131,7 +134,7 @@ span.cit {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Raleway', monospace;
+    font-family: 'Cutive Mono', monospace;
     position: relative;
     left: 0px;
 }
@@ -228,14 +231,14 @@ li em {
 }
 
 li span {
-    font-family: 'Inconsolata', monospace;
+    font-family: 'Cutive Mono', monospace;
     font-weight: bold;
     font-size: calc(14px * 1.25);
     color: #000;
 }
 
 li span.quote {
-    font-family: 'Titillium Web', monospace;
+    font-family: 'Cutive Mono', monospace;
     font-weight: normal;
     font-size: calc(13px * 1.25);
     font-style: italic;
@@ -290,7 +293,7 @@ a.title {
 }
 
 li span.date {
-    font-family: 'Major Mono Display', monospace;
+    font-family: 'Cutive Mono', monospace;
     font-size: calc(11px * 1.25);
 }
 
@@ -317,20 +320,20 @@ p.resume-page {
 
 p.resume-link {
     margin-left:30px;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Cutive Mono', monospace;
     font-size:18px;
 }  
 
 p.resume-name {
     text-align:center ! important;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Cutive Mono', monospace;
     font-size:33px;
     font-weight:bold;
 }  
 
 p.resume-subtitle {
     text-align:center ! important;
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Cutive Mono', monospace;
     font-size:23px;
     margin-bottom:70px;
 }  
@@ -358,7 +361,7 @@ p.footnote {
 }  
 
 span.link {
-    font-family: 'JetBrains Mono', monospace;
+    font-family: 'Cutive Mono', monospace;
     font-weight:normal;
     font-size:15px;
 }
