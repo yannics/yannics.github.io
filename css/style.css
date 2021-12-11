@@ -294,15 +294,6 @@ li span.date {
     font-size: calc(11px * 1.25);
 }
 
-#ip {
-    font-size: calc(11px * 1.15);
-    color: #999;
-    position:fixed;
-    bottom:10px;
-    right:20px;
-    cursor: default;
-}
-
 .lynx {display: none;}
 
 
