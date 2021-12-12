@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
 body {
     background-image: url(../img/1234.png);
     background-position: center right;
@@ -7,7 +7,7 @@ body {
     background-attachment: fixed;
     background-size: cover;
     background-color: #FFF;
-    font-family: 'Cutive Mono', monospace;
+    font-family: 'Syne Mono', monospace;
     font-size: calc(13px * 1.25);
     color: #000;
     margin: 0px;
@@ -123,7 +123,7 @@ span.upd {
 }
 
 span.nojs {
-    font-family: 'Cutive Mono', monospace;
+    font-family: 'Syne Mono', monospace;
     font-size: calc(11px * 1.25);
     color: red;
 }
@@ -134,7 +134,7 @@ span.cit {
 }
 
 h1, h2, h3, h4 {
-    font-family: 'Cutive Mono', monospace;
+    font-family: 'Syne Mono', monospace;
     position: relative;
     left: 0px;
 }
@@ -223,7 +223,7 @@ img {
 }
 
 li {
-    padding-bottom: 8px;
+    padding-bottom: 13px;
 }
 
 li em {
@@ -231,14 +231,14 @@ li em {
 }
 
 li span {
-    font-family: 'Cutive Mono', monospace;
+    font-family: 'Syne Mono', monospace;
     font-weight: bold;
     font-size: calc(14px * 1.25);
     color: #000;
 }
 
 li span.quote {
-    font-family: 'Cutive Mono', monospace;
+    font-family: 'Syne Mono', monospace;
     font-weight: normal;
     font-size: calc(13px * 1.25);
     font-style: italic;
@@ -320,20 +320,20 @@ p.resume-page {
 
 p.resume-link {
     margin-left:30px;
-    font-family: 'Cutive Mono', monospace;
+    font-family: 'Syne Mono', monospace;
     font-size:18px;
 }  
 
 p.resume-name {
     text-align:center ! important;
-    font-family: 'Cutive Mono', monospace;
+    font-family: 'Syne Mono', monospace;
     font-size:33px;
     font-weight:bold;
 }  
 
 p.resume-subtitle {
     text-align:center ! important;
-    font-family: 'Cutive Mono', monospace;
+    font-family: 'Syne Mono', monospace;
     font-size:23px;
     margin-bottom:70px;
 }  
@@ -361,7 +361,7 @@ p.footnote {
 }  
 
 span.link {
-    font-family: 'Cutive Mono', monospace;
+    font-family: 'Syne Mono', monospace;
     font-weight:normal;
     font-size:15px;
 }
