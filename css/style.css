@@ -1,5 +1,13 @@
 @import url('https://fonts.googleapis.com/css2?family=Cutive+Mono&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Syne+Mono&display=swap');
+
+#button {
+	border-radius: 5px;
+	border: none;
+	background-color: #ccc;
+	cursor: pointer;font-family: 'Cutive Mono', monospace;
+}
+
 body {
     background-image: url(../img/1234.png);
     background-position: center right;
@@ -72,7 +80,7 @@ div.block8 {
     right: 0px;
     left: 0px;
     top: 0px;
-    bottom: 0;
+bottom: 0;
     overflow-y: auto;
 }
 
@@ -123,7 +131,7 @@ span.upd {
 }
 
 span.nojs {
-    font-family: 'Syne Mono', monospace;
+    font-family: 'Cutive Mono', monospace;
     font-size: calc(11px * 1.25);
     color: red;
 }

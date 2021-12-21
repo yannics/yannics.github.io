@@ -1,0 +1,13 @@
+html {
+    -webkit-filter: invert(0%); 
+    -moz-filter: invert(0%);
+    -o-filter: invert(0%); 
+    -ms-filter: invert(0%); 
+    filter: invert(0%); 
+    -webkit-transition: 0.5s -webkit-filter ease;
+    -moz-transition: 0.5s -moz-filter ease;
+    -moz-transition: 0.5s filter ease;
+    -ms-transition: 0.5s -ms-filter ease;
+    -o-transition: 0.5s -o-filter ease;
+    transition: 0.5s filter ease, 0.5s -webkit-filter ease;
+}

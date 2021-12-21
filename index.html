@@ -9,9 +9,21 @@
 <meta name="google" content="notranslate">
 <meta name="google" value="notranslate">
 <link href="img/favicon.ico" rel="shortcut icon" />
-<link rel="stylesheet" href="css/style.css" />
+<link rel="stylesheet" type="text/css" href="css/style.css" />
+<link id="theme" rel="stylesheet" type="text/css" href="css/light.css" />
 <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
 <script type="text/javascript"> 
+function toggle() {
+    var el = document.getElementById("theme");
+    if (el.href.match("css/light.css")) {
+        el.href = "css/dark.css";  
+        document.getElementById('button').innerHTML = "&gt; light";  
+    }
+    else {
+        el.href = "css/light.css";  
+        document.getElementById('button').innerHTML = "&gt; dark&nbsp";
+    }
+};
 function display_c(){
 var refresh=1000; // Refresh rate in milli seconds
 mytime=setTimeout('display_ct()',refresh)
@@ -93,6 +105,13 @@ if(isFirefox)
 <span class="cit" title="Maxime attribuée à Guillaume Ier de Nassau dit le Taciturne, prince d'Orange (1533-1584)"><em>Point n'est besoin d'espérer pour entreprendre, ni de réussir pour persévérer.</em></span><br/>
 <p slyle="margin-bottom:2px"></p>
 <div class="lynx">Maxime attribuée à Guillaume Ier de Nassau dit le Taciturne, prince d'Orange (1533-1584)<br/>-----------------------------</div>
+<script>
+var isChrome = /Chrome/.test(navigator.userAgent) && /Google Inc/.test(navigator.vendor);
+if(isChrome)
+	{
+		document.write('<button id="button" type="button" onclick="toggle()">&gt; dark&nbsp;</button>');
+    }
+</script>
 </div>
 
 <div id="cover-spin"></div>
