@@ -290,6 +290,13 @@ li span.date {
     font-size: calc(11px * 1.25);
 }
 
+li.note {
+    text-align: left;
+    line-height: 80%;
+    font-family: 'Cutive Mono', monospace;
+    font-size: calc(11px * 1.25);
+}
+
 .lynx {display: none;}
 
 
