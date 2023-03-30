@@ -220,6 +220,10 @@ ul {
     text-align: right;
 }
 
+li .marginright {
+    margin-right: 50px;
+}
+
 li img {
     vertical-align: -13%;
     margin-left: 3px;
