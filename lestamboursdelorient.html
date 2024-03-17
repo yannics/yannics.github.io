@@ -3,38 +3,29 @@
   <head>
     <title>Yann Ics</title>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link href="img/favicon.ico" rel="shortcut icon" />
     <style>
       body {
 	  font-family: monospace;
 	  background-color: rgb(241,235,229);
 	  background-image: url("img/765467.png");
-	  /*background-size: 100% auto;*/
           background-position: center top; 
           background-size: clamp(100px, 100%, 800px) auto;
 	  background-repeat: no-repeat;
 	  font-size: 1rem;
-	  /*color: rgb(255, 252, 230) ;*/
       }
       
       .date {
-position: fixed;
+	  position: fixed;
           z-index:1;
 	  font-family: monospace;
 	  color: red;
 	  font-size: 1rem;
-	  /*top: 1vw;
-	  left:1vw;
-	  margin-right:1vw;
-	  padding: 1vw;*/
-
-left: 50%;
-transform: translateX(-50%);
-width: clamp(100px, 100%, 800px);
-padding: 1vw;
-text-align: center;
-
+	  left: 50%;
+	  transform: translateX(-50%);
+	  width: clamp(100px, 100%, 800px);
+	  padding: 1vw;
+	  text-align: center;
 	  background-color:rgb(241,235,229);
 	  box-shadow: 10px 10px 28px 1px rgba(0,0,0,0.75);
 	  border-radius: 5px;
@@ -52,6 +43,7 @@ text-align: center;
       .text {
 	  text-align: justify;
 	  position: absolute;
+
 	  top: clamp(10px, 50vw, 400px);
 	  margin: 2vw;
 	  font-size: 0.8rem;
