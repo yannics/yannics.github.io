@@ -5,10 +5,7 @@
     <meta charset="UTF-8">
     <link href="img/favicon.ico" rel="shortcut icon" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
-    <link href="https://fonts.googleapis.com/css2?family=Cutive+Mono&family=Syne+Mono&display=swap" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap" rel="stylesheet">
+    <link href="stylesheet.css" rel="stylesheet">
 
     <!--
 	140C08
@@ -19,8 +16,16 @@
     -->
 
     <style>
+      @font-face {
+          font-family: 'Niew CroMagnon';
+          src: url('font/NiewCroMagnon.woff2') format('woff2');
+          font-weight: normal;
+          font-style: normal;
+          font-display: swap;
+      }
+
       body {
-	  font-family: "Nunito", sans-serif;
+	  font-family: 'Niew CroMagnon';
 	  background-color: #F3F0DE;
 	  color: #8D3D2A;
       }
@@ -32,7 +37,7 @@
           border: none;
       }
 
-      h1, h2, h3, h4, h5 { color: #8D3D2A; }
+      h1, h2, h3, h4, h5 { color: #8D3D2A; margin-bottom:-10px;}
 
       figure {
           border: 1px solid #ddd;
@@ -47,7 +52,7 @@
       a:visited { color: #D7C092; }
       a:link:active, :visited:active { color: #8D3D2A; }
       
-      p, li { font-family: 'Cutive Mono', monospace; }
+      p, li { font-family: 'Niew CroMagnon'; }
     </style>
     <style media="print">
       /* <![CDATA[ */      
@@ -65,6 +70,8 @@
 
     <h2>Conceptual Composer</h2>
     
+    <br/>
+
     <small><p><em>... il n'y a pas de réponse, ... il n'y a que des choix ...</em> [ Stanislas Lem (1921-2006) in SOLARIS (1961) ]</p></small>
     
     <h3>PROGRAMMING</h3>
@@ -106,19 +113,25 @@
     </ul>  
     
     <h3>QUADRAPHONIC WORKS</h3>
-    <ul>
-      <li>105A1408 &ndash; Di-quadraphonic installation In the shed &ndash; Kr&aring;kstad [26/06/20]</li>
-      <li>data-01 &ndash; <a target="_blank" href="https://notam.no/" >NOTAM</a> &ndash; Oslo [17/06/19]</li>
-      <li>HEX0 &ndash; Salle des fêtes de Perret &ndash; Kreiz Breizh [25/11/16]</li>
-      <li>Triptyque &ndash; Église de Lescouët-Gouarec &ndash; Kreiz Breizh [19/09/15]</li>
-    </ul>
+  
+    <div style="margin-left:25px">
     <h4>[ Quadraphonic statements ]</h4>
+    <em>
     <small>
       <ol>
 	<li>The quadraphony is not only a stereophonic expansion.  </li><li> The quadraphony allows a spatial diffusion much richer than the stereophony.</li>
 	<li> The quadraphony that I propose is not limited to a static listening at equal distance of the speakers, but rather dynamic and suppose from the auditor to do the listening experience in all points within the quadraphonic space.</li>
       </ol>
     </small>
+    </em>
+    </div>
+
+    <ul>
+      <li>105A1408 &ndash; Di-quadraphonic installation In the shed &ndash; Kr&aring;kstad [26/06/20]</li>
+      <li>data-01 &ndash; <a target="_blank" href="https://notam.no/" >NOTAM</a> &ndash; Oslo [17/06/19]</li>
+      <li>HEX0 &ndash; Salle des fêtes de Perret &ndash; Kreiz Breizh [25/11/16]</li>
+      <li>Triptyque &ndash; Église de Lescouët-Gouarec &ndash; Kreiz Breizh [19/09/15]</li>
+    </ul>
     
     <h3>ORCHESTRAL WORKS</h3>
     <ul>
@@ -153,12 +166,14 @@
     <br/>
     <hr>
 
-    <h2 id="resume">RESUME</h2>
-    
+    <h2 id="resume" style="margin-bottom: 20px;">RESUME</h2>
+
     <h3>Yann ICS</h3>
 
     <h4>Conceptual Composer</h4>
     
+    <br/>
+
     <p>Email : <a target="_blank" href="mailto:by.cmsc@gmail.com">by.cmsc@gmail.com</a></p>
     <p>WebSite : <a target="_blank" href="https://yannics.github.io/">yannics.github.io</a></p>
     <p>GitHub : <a target="_blank" href="https://github.com/yannics/">github.com/yannics/</a></p>
@@ -202,7 +217,7 @@
 
 <h5>MY CURRENT MESSAGE TO THE FUTURE</h5>
 
-<div style="margin-left:13pt;margin-bottom:18pt;">
+<div style="margin-left:13pt;margin-bottom:18pt;margin-top:18pt">
 <small>
   <p>In a frame of experimenting with some alternative way of life based on the sharing knowledge and space more in accordance with nature and in the respect of human needs &ndash; and because we have to change our relationship with the world where we living and hence the rules imposed by the global economic system (basically, the global economic system dictates its own rules against common sense because the goal is to increase our consumption and make more and more money for predominantly the power provided by it within the slave system, sad heritage of our civilisation) &ndash; I am looking for any kind of support to initiate or to share alternative life experience and to explore possible futures.</p>
   
@@ -222,6 +237,6 @@
 
 <hr>
 
-<p style="font-size:x-small;text-align:right;color:#D7C092">HTML page updated the 22nd of April, 2024&nbsp;&nbsp;</p>
+<p style="font-size:x-small;text-align:right;color:#D7C092">HTML page updated the 25th of May, 2024&nbsp;&nbsp;</p>
 </body>
 </html>
