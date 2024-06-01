@@ -14,6 +14,23 @@
 	F3F0DE
     -->
 
+    <script>
+      // source: https://gist.github.com/code-boxx/76b9ea188f37313ced9239e5ae731471
+      window.addEventListener("load", () => {
+	  // (A) CHECK FOR MOBILE
+	  var isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
+	  
+	  // (B) SET CSS IF NOT MOBILE
+	  if (!isMobile) { 
+	      document.body.style.backgroundImage = 'url(img/01111001.png)';
+	      document.body.style.backgroundPosition = 'top left';
+              document.body.style.backgroundAttachment = 'fixed';
+              document.body.style.backgroundRepeat = 'no-repeat';
+              document.body.style.backgroundSize = '1000px';        
+	  }
+      });
+    </script>
+    
     <style>
       @font-face {
           font-family: 'Niew CroMagnon';
@@ -22,17 +39,6 @@
           font-style: normal;
           font-display: swap;
       }
-
-      @media (min-width: 481px) {
-          body {
-              background-image: url("img/01111001.png");
-              background-position: top left;
-              background-attachment: fixed;
-              background-repeat: no-repeat;
-              background-size: 1000px;
-          }
-      }
-
 
       body {
 	  font-family: 'Niew CroMagnon';
