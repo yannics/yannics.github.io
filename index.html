@@ -13,35 +13,10 @@
 	D7C092
 	F3F0DE
     -->
-
-    <script>
-      // source: https://gist.github.com/code-boxx/76b9ea188f37313ced9239e5ae731471
-      window.addEventListener("load", () => {
-	  // (A) CHECK FOR MOBILE
-	  var isMobile = navigator.userAgent.toLowerCase().match(/mobile/i);
-	  
-	  // (B) SET CSS IF NOT MOBILE
-	  if (!isMobile) { 
-	      document.body.style.backgroundImage = 'url(img/01111001.png)';
-	      document.body.style.backgroundPosition = 'top left';
-              document.body.style.backgroundAttachment = 'fixed';
-              document.body.style.backgroundRepeat = 'no-repeat';
-              document.body.style.backgroundSize = '1000px';        
-	  }
-      });
-    </script>
     
     <style>
-      @font-face {
-          font-family: 'Niew CroMagnon';
-          src: url('font/NiewCroMagnon.woff2') format('woff2');
-          font-weight: normal;
-          font-style: normal;
-          font-display: swap;
-      }
-
       body {
-	  font-family: 'Niew CroMagnon';
+	  font-family: monospace;
 	  background-color: #F3F0DE;
 	  color: #8D3D2A;
       }
@@ -68,7 +43,7 @@
       a:visited { color: #D7C092; }
       a:link:active, :visited:active { color: #8D3D2A; }
       
-      p, li { font-family: 'Niew CroMagnon'; }
+      p, li { font-family: monospace; }
     </style>
     <style media="print">
       /* <![CDATA[ */      
