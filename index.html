@@ -15,8 +15,15 @@
     -->
     
     <style>
+      @font-face {
+          font-family: 'Neo';
+          src: url('font/NeoPrintM319.woff2') format('woff2');
+          font-weight: normal;
+          font-style: normal;
+          font-display: swap;
+      }
+
       body {
-	  font-family: monospace;
 	  background-color: #F3F0DE;
 	  color: #8D3D2A;
       }
@@ -28,7 +35,7 @@
           border: none;
       }
 
-      h1, h2, h3, h4, h5 { color: #8D3D2A; margin-bottom:-10px;}
+      h1, h2, h3, h4, h5 { color: #8D3D2A; margin-bottom:-10px; font-family:'Neo'; }
 
       figure {
           border: 1px solid #ddd;
@@ -42,8 +49,6 @@
       a:link { color: #AD6C32; }
       a:visited { color: #D7C092; }
       a:link:active, :visited:active { color: #8D3D2A; }
-      
-      p, li { font-family: monospace; }
     </style>
     <style media="print">
       /* <![CDATA[ */      
