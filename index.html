@@ -23,9 +23,26 @@
           font-display: swap;
       }
 
+      @font-face {
+          font-family: 'bod';
+          src: url('font/StampPressRegularpgMYy.woff2') format('woff2');
+          font-weight: normal;
+          font-style: normal;
+          font-display: swap;
+      }
+
+      .copyleft {
+          position: relative;
+          top: -2px;
+          display:inline-block;
+          transform: rotate(180deg);
+      }
+
       body {
 	  background-color: #F3F0DE;
 	  color: #8D3D2A;
+          font-family: 'bod';
+          font-size:0.8em;
       }
 
       hr {
@@ -35,7 +52,7 @@
           border: none;
       }
 
-      h1, h2, h3, h4, h5 { color: #8D3D2A; margin-bottom:-10px; font-family:'Neo'; }
+      h1, h2, h3, h4, h5 { color: #140C08; margin-bottom:-0.25em; font-family:'Neo'; }
 
       figure {
           border: 1px solid #ddd;
@@ -171,7 +188,7 @@
       </li>
     </ul>   
     
-    <br/>
+    <!-- <br/> -->
     <hr>
 
     <h2 id="resume" style="margin-bottom: 20px;">RESUME</h2>
@@ -228,7 +245,7 @@
 
 <h5>MY CURRENT MESSAGE TO THE FUTURE</h5>
 
-<div style="margin-left:13pt;margin-bottom:18pt;margin-top:18pt">
+<div style="margin-left:13pt;margin-bottom:18pt;margin-top:10pt">
 <small>
   <p>In a frame of experimenting with some alternative way of life based on the sharing knowledge and space more in accordance with nature and in the respect of human needs &ndash; and because we have to change our relationship with the world where we living and hence the rules imposed by the global economic system (basically, the global economic system dictates its own rules against common sense because the goal is to increase our consumption and make more and more money for predominantly the power provided by it within the slave system, sad heritage of our civilisation) &ndash; I am looking for any kind of support to initiate or to share alternative life experience and to explore possible futures.</p>
   
@@ -248,6 +265,6 @@
 
 <hr>
 
-<p style="font-size:x-small;text-align:right;color:#D7C092">HTML page updated the 25th of May, 2024&nbsp;&nbsp;</p>
+<p style="font-size:xx-small;text-align:right;color:#D7C092">HTML page updated the 28th of October, 2024 <span class="copyleft">&copy;</span> All Wrongs Reserved&nbsp;&nbsp;</p>
 </body>
 </html>
