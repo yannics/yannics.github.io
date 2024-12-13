@@ -52,7 +52,21 @@
           border: none;
       }
 
-      h1, h2, h3, h4, h5 { color: #140C08; margin-bottom:-0.25em; font-family:'Neo'; }
+      h1, h2, h3, h4, h5 {
+	  color: #140C08;
+	  margin-bottom:-0.25em;
+	  font-family:'Neo';
+	  display: flex;
+	  align-items: center;
+      }
+      
+      h1::after, h2::after, h3::after, h4::after, h5::after {
+	  content: '';
+	  flex: 1;
+	  margin-left: 1rem;
+	  height: 1px;
+	  background-color: #D7C092;
+      }
 
       figure {
           border: 1px solid #ddd;
@@ -118,6 +132,7 @@
     <!--
       <iframe style="border: 0; width: 320px; height: 120px;" src="https://bandcamp.com/EmbeddedPlayer/album=1579316162/size=large/bgcol=ffffff/linkcol=0687f5/tracklist=false/artwork=none/transparent=true/" seamless><a target="_blank" href="https://adventurousmusic.bandcamp.com/album/solutions">Solutions by Yann Ics &amp; Theta</a></iframe>
     -->
+
       </li>
       <li>Augmented reality short films sound composition for <a target="_blank" href="https://hellox.me/" >hello X</a>  &ndash; commissioned by <a target="_blank" href="https://ice-9.no" >ICE-9</a> &ndash; Tromsø [2020]</li>
       <li><em>Soirée contée</em> proposée par l'association <a target="_blank" href="https://autourdepenreth.org/culture/" ><i>Autour de Pen-Reth</i></a> avec le conteur Jean Mussau &ndash; Salle des fêtes de Perret &ndash; Kreiz Breizh [25/11/16]</li>
@@ -168,12 +183,14 @@
     
       <iframe src="https://archive.org/embed/the-incredible-journey-of-sea-babies" width="320" height="240" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
     -->
+
       </li>
       <li>Sound illustration of the film <a target="_blank" href="https://archive.org/details/lupi-les-loups-de-coat-fur"  >Lupi-Les loups de Coat Fur</a> by <a target="_blank" href="http://www.nicolascharles.fr/" >Nicolas Charles</a> [2016] <br/>
 
     <!--
       <iframe src="https://archive.org/embed/lupi-les-loups-de-coat-fur" width="320" height="240" frameborder="0" webkitallowfullscreen="true" mozallowfullscreen="true" allowfullscreen></iframe>
     -->
+
       </li>
     </ul> 
 
@@ -238,9 +255,11 @@
 <ul>
   <li>Français : Native speaker</li>
   <li>English : Working knowledge (level B1 &sim; B2)</li>
+  
     <!--
   <br/><img src="img/1234.png" alt="" style="width:320px;">
     -->
+
 </ul>
 
 <h5>MY CURRENT MESSAGE TO THE FUTURE</h5>
