@@ -5,49 +5,39 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Presentation</title>
-     <style>
+    <style>
+      
+      body {
+	  background-color: #222;
+	  font-size: 11px;color: #CCC;
+	  font-family: "Andale Mono", "Lucida Console", sans-serif;
+	  width:100%;
+	  max-width:550px;
+	  margin:0 auto;
+	  padding:5px;
+	  text-align:justify;
+	  hyphens: auto;
+	  -webkit-hyphens: auto;
+	  -moz-hyphens: auto;
+	  -ms-hyphens: auto;
+	  -o-hyphens: auto;
+      }
 
-       body {
-	   background-color: #222;
-	   font-size: 11px;color: #CCC;
-	   font-family: "Andale Mono", "Lucida Console", sans-serif;
-       }
-
-       img {
-	   width:100%;
-       }
-       
-       #wrap {
-	   background-color: #222;
-	   font-size: 11px;color: #CCC;
-	   font-family: "Andale Mono", "Lucida Console", sans-serif;
-	   width:100%;
-	   max-width:550px;
-	   margin:0 auto;
-	   padding:5px;
-	   text-align:justify;
-	   hyphens: auto;
-	   -webkit-hyphens: auto;
-	   -moz-hyphens: auto;
-	   -ms-hyphens: auto;
-	   -o-hyphens: auto;
-       }
-       
-       a:link {
-	   text-decoration: underline;
-	   color: #FFF;
-       }
-       
-       a:visited {
-	   text-decoration: underline;
-	   color: #AD6C32;
-       }
-       
-       a:hover {
-	   text-decoration: underline;
-	   color: #D7C092;
-       }
-       
+      a:link {
+	  text-decoration: underline;
+	  color: #FFF;
+      }
+      
+      a:visited {
+	  text-decoration: underline;
+	  color: #AD6C32;
+      }
+      
+      a:hover {
+	  text-decoration: underline;
+	  color: #D7C092;
+      }
+      
        a:active {
 	   text-decoration: underline;
 	   color: #D7C092;
@@ -57,115 +47,200 @@
 	   font-size:x-small;
 	   padding: 5px;
        }
-   
+       
+       .wrapper {
+	   display: flex;
+	   align-items: center;
+	   justify-content: center;
+	   min-height: 10vh;
+	   max-width:550px;
+	   height:170px;	   
+	   transform-style: preserve-3d;
+       }
+
+       img {width: 100%;}
+
+       .img {
+	   position: absolute;
+
+	   &.-base {
+	       
+	   }
+	   
+	   &.-clip {
+	       clip-path: url(#clip-path);
+	       pointer-events: none;
+	       transition: opacity 0.2s;
+	       opacity: 0;
+	   }
+       }
+  
     </style>
   </head>
   
   <body>
-    <div id="wrap">
+   
+    <h2>
+      Presentation	
+    </h2>
+    <hr>
+    <h3>
+      Yann Ics &ndash; Conceptual Composer
+    </h3>
+    <h4>
+      Press
+    </h4>
+    <ul>
       
-      <h2>
-	Presentation	
-      </h2>
-      <hr>
-      <h3>
-	Yann Ics &ndash; Conceptual Composer
-      </h3>
-      <h4>
-	Press
-      </h4>
+      <li>
+	Contribution of <i>Blåstjernehav Familie- &amp; Dukketeater</i> :
+	<br>
+	<a href="https://www.hakapik.no/home/2020/10/8/levende-kunst-i-en-bygning-i-forfall">https://www.hakapik.no/home/2020/10/8/levende-kunst-i-en-bygning-i-forfall</a>
+	<br>
+	&rarr; Part 3 Section Works <i>Selenes Havbrev</i>
+	<br>
+	in <i>Journal of Generative Sonic Art</i> [Ics, 2014/24]
+      </li>
+      
+      <li>
+	Participation with quadraphonic installation :
+	<br>
+	<a href="http://uddebo.uddetopia.com/uppleva-gora/uddebofestidalen">http://uddebo.uddetopia.com/uppleva-gora/uddebofestidalen</a>
+	<br>
+	&rarr; Part 3 Section Works <i>Kjølhiea</i>
+	<br>
+	in <i>Journal of Generative Sonic Art</i> [Ics, 2014/24] 
+      </li>
+      
+      <li>
+	Presentation of <i>Neuromuse3</i> :
+	<br>
+	<a href="https://notam.no/wp-content/uploads/2024/11/Notam_Arsmelding-2018.pdf">https://notam.no/wp-content/uploads/2024/11/Notam_Arsmelding-2018.pdf</a>
+	<br>
+	&rarr; <a href="https://github.com/yannics/Neuromuse3/blob/master/n3.pdf">https://github.com/yannics/Neuromuse3/blob/master/n3.pdf</a>  
+      </li>
+      
+      <li>
+        Festival MÀD playing bagpipe duet :
+        <br>
+	<a href="https://lefestivalmad.fr/la-soiree-des-musiciens/">https://lefestivalmad.fr/la-soiree-des-musiciens/</a>
+        <br>
+	&rarr; <a href="https://www.academia.edu/117439217">https://www.academia.edu/117439217</a>
+      </li>  
+      
+    </ul>
+    <hr>
+    
+    <div class="wrapper">
+      
+      <img class="img -base" src="img/88b26785/img2.png" alt="">
+      <img class="img -clip" src="img/88b26785/img1.png" alt="" />
+      <svg id="svg" viewbox="0 0 500 500" width="1%">
+	<clipPath class="clip-path" id="clip-path" width="60" height="30">
+	  <path d="M25,100a75,75 0 1,0 150,0a75,75 0 1,0 -150,0"></path>
+	</clipPath>
+      </svg>
+
+    </div>
+    
+    <script src='https://cdnjs.cloudflare.com/ajax/libs/snap.svg/0.5.1/snap.svg-min.js'></script>
+
+    <!-- source: https://codepen.io/mo-ro/pen/MWabWKY -->
+    
+    <script>
+      const svgPath = Snap( '#svg path' );
+      const path =　[
+	  'M25,100a75,75 0 1,0 150,0a75,75 0 1,0 -150,0'
+      ];
+      
+      let indexPath = 0;
+      const speed = 500;
+      
+      playAnimation();
+      
+      function playAnimation() {
+	  svgPath.animate( 
+	      {d: path[indexPath] }, speed, playAnimation );
+	  if(indexPath === path.length -1) {
+	      indexPath = 0;
+	  } else {
+	      indexPath++;
+	  }
+      }
+      
+      const elBaseImage = document.querySelector(".img.-base");
+      const elClipImage = document.querySelector(".img.-clip");
+      const elClipPath = document.querySelector(".clip-path");
+      let acceleration = 0;
+      
+      elBaseImage.addEventListener('mousemove', e => {
+	  setTimeout(() => {
+	      elClipPath.style.transform = `translate3d(${e.offsetX - 100}px, ${e.offsetY - 100}px, 0)`;
+	  }, acceleration < 200 ? acceleration+=5 : 200);
+      });
+      
+      elBaseImage.addEventListener('mouseleave', () => {
+	  elClipImage.style.opacity = 0;
+	  acceleration = 0;
+      });
+      
+      elBaseImage.addEventListener('mouseenter', e => {
+	  elClipImage.style.opacity = 1;
+      });
+      
+    </script>
+
+    <hr>
+
+    <p>
+	I am Yann Ics, a sonic artist working with music as a concept.
+    </p>
+    <p>
+      My work mainly explores the potential of the interpreter(s) in a given situation.
+    </p>
+    <p>
+      Until now, I mainly experimented with music through score and quadraphonic installation.
+    </p>
+    <p>
+      The music I produced is not tonal, even if sometimes I used scales or borrowed melodies, and can be depicted more like algorithmic processes, which I mostly related in my writing named GSA : <a href="https://github.com/yannics/GSA/blob/master/gsa.pdf">https://github.com/yannics/GSA/blob/master/gsa.pdf</a>
+    </p>
+    <p>
+      Most of the processes generate abstract music which can be &ndash; according to the situation &ndash; felt like a soundscape, immersive sound experience, or other feelings that cannot be expressed objectively.
+    </p>
+    <p>
+      I occasionally produced music for short films and collaborated with storytellers.
+    </p>
+    <p>
+      I also experimented new approach for practicing music in a group with about ten participants : <a href="https://www.academia.edu/94964990">https://www.academia.edu/94964990</a>
+    </p>
+    <p>
+      Although I did not record my production, it is nevertheless possible to hear some of my works here, which are obviously not representative of the whole :
       <ul>
 	
 	<li>
-	  Contribution of <i>Blåstjernehav Familie- &amp; Dukketeater</i> :
-	  <br>
-	  <a href="https://www.hakapik.no/home/2020/10/8/levende-kunst-i-en-bygning-i-forfall">https://www.hakapik.no/home/2020/10/8/levende-kunst-i-en-bygning-i-forfall</a>
-	  <br>
-	  &rarr; Part 3 Section Works <i>Selenes Havbrev</i>
-	  <br>
-	  in <i>Journal of Generative Sonic Art</i> [Ics, 2014/24]
+	  <a href="https://adventurousmusic.bandcamp.com/album/solutions">https://adventurousmusic.bandcamp.com/album/solutions</a>
 	</li>
 	
 	<li>
-	  Participation with quadraphonic installation :
-	  <br>
-	  <a href="http://uddebo.uddetopia.com/uppleva-gora/uddebofestidalen">http://uddebo.uddetopia.com/uppleva-gora/uddebofestidalen</a>
-	  <br>
-	  &rarr; Part 3 Section Works <i>Kjølhiea</i>
-	  <br>
-	  in <i>Journal of Generative Sonic Art</i> [Ics, 2014/24] 
+	  <a href="https://archive.org/details/the-incredible-journey-of-sea-babies">https://archive.org/details/the-incredible-journey-of-sea-babies</a>
 	</li>
 	
 	<li>
-	  Presentation of <i>Neuromuse3</i> :
-	  <br>
-	  <a href="https://notam.no/wp-content/uploads/2024/11/Notam_Arsmelding-2018.pdf">https://notam.no/wp-content/uploads/2024/11/Notam_Arsmelding-2018.pdf</a>
-	  <br>
-	  &rarr; <a href="https://github.com/yannics/Neuromuse3/blob/master/n3.pdf">https://github.com/yannics/Neuromuse3/blob/master/n3.pdf</a>  
+	  <a href="https://soundcloud.com/yann-ics/rm236">https://soundcloud.com/yann-ics/rm236</a>
 	</li>
 	
 	<li>
-          Festival MÀD playing bagpipe duet :
-          <br>
-	  <a href="https://lefestivalmad.fr/la-soiree-des-musiciens/">https://lefestivalmad.fr/la-soiree-des-musiciens/</a>
-          <br>
-	  &rarr; <a href="https://www.academia.edu/117439217">https://www.academia.edu/117439217</a>
-	</li>  
+	  <a href="https://archive.org/details/lupi-les-loups-de-coat-fur">https://archive.org/details/lupi-les-loups-de-coat-fur</a>
+	</li>
 	
-      </ul>
-      <hr>
-      <img src="img/88b26785/88b26785.png" alt="">
-      <hr>
-      <p>
-	I am Yann Ics, a sonic artist working with music as a concept.
-      </p>
-      <p>
-	My work mainly explores the potential of the interpreter(s) in a given situation.
-      </p>
-      <p>
-	Until now, I mainly experimented with music through score and quadraphonic installation.
-      </p>
-      <p>
-	The music I produced is not tonal, even if sometimes I used scales or borrowed melodies, and can be depicted more like algorithmic processes, which I mostly related in my writing named GSA : <a href="https://github.com/yannics/GSA/blob/master/gsa.pdf">https://github.com/yannics/GSA/blob/master/gsa.pdf</a>
-      </p>
-      <p>
-	Most of the processes generate abstract music which can be &ndash; according to the situation &ndash; felt like a soundscape, immersive sound experience, or other feelings that cannot be expressed objectively.
-      </p>
-      <p>
-	I occasionally produced music for short films and collaborated with storytellers.
-      </p>
-      <p>
-	I also experimented new approach for practicing music in a group with about ten participants : <a href="https://www.academia.edu/94964990">https://www.academia.edu/94964990</a>
-      </p>
-      <p>
-	Although I did not record my production, it is nevertheless possible to hear some of my works here, which are obviously not representative of the whole :
-	<ul>
-	  
-	  <li>
-	    <a href="https://adventurousmusic.bandcamp.com/album/solutions">https://adventurousmusic.bandcamp.com/album/solutions</a>
-	  </li>
-	  
-	  <li>
-	    <a href="https://archive.org/details/the-incredible-journey-of-sea-babies">https://archive.org/details/the-incredible-journey-of-sea-babies</a>
-	  </li>
-	  
-	  <li>
-	    <a href="https://soundcloud.com/yann-ics/rm236">https://soundcloud.com/yann-ics/rm236</a>
-	  </li>
-	  
-	  <li>
-	    <a href="https://archive.org/details/lupi-les-loups-de-coat-fur">https://archive.org/details/lupi-les-loups-de-coat-fur</a>
-	  </li>
-	  
-	</ul> 
-      </p>
-      <p>
-	More about myself and my work on my website : <a href="https://yannics.github.io/">https://yannics.github.io/</a>
-      </p>
-      <hr>
-      <br>
-    </div>
-
+      </ul> 
+    </p>
+    <p>
+      More about myself and my work on my website : <a href="https://yannics.github.io/">https://yannics.github.io/</a>
+    </p>
+    <hr>
+    <br>
+    
   </body>
   
 </html>
