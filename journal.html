@@ -17,7 +17,7 @@
           color: #CCC;
 	  font-family: "Andale Mono", "Lucida Console", sans-serif;
 	  width: 100%;
-	  max-width: 550px;
+	  max-width: 500px;
 	  margin: 0 auto;
 	  padding: 5px;
 	  text-align: justify;
@@ -27,37 +27,66 @@
 	  -ms-hyphens: auto;
 	  -o-hyphens: auto;
       }
-
+      
       a:link {
 	  text-decoration: none;
-	  color: #D7C092;
+	  color: #666;
       }
       
       a:visited {
           text-decoration: none;
-	  color: #FFF;
+	  color: #666;
       }
       
       a:hover {
 	  text-decoration: none;
-          background-color: #AD6C32;
+          color: #D7C092;
       }
       
       a:active {
 	  text-decoration: none;
 	  color: #D7C092;
       }
+
+.box {
+position: fixed;
+width: 100%;
+height: 0px;
+max-width: 500px;
+margin: 0 auto;
+padding: 0px;
+box-shadow: 0 0 50px 100px #222;    
+}
       
-      img { pointer-events: none; }
+      img { pointer-events: none; color: yellow; display: none; }
       
-      ol p {color:orange; margin-left:-23px;}
+      ol p {color:orange; margin-left:-25px;}
 
       ol li {margin-top: 5px;}
 
-      ol li span {color:orange;font-size: 10px;}
+      ol li span {color:orange; font-size: 10px;}
 
-      ol li::marker {color: orange;font-size: 9px;}
+      ol li::marker {color: orange; font-size: 9px;}
+
+      .note { color: gray; font-size: 9px; display: none; }
+      .note span { color: #AAA; font-weight: bold; }
+
+      .jdb {color:#A37800; display:none;}
       
+      .lg{display:none;}
+
+      #title {
+	  position: fixed;
+	  width: 100%;
+	  max-width: 500px;
+	  margin: 0 auto;
+	  padding: 5px;
+      }
+
+      #yi {margin-top: 135px;}
+      
+      b {background-color:red;color:yellow;font-weight:normal;}
+
     </style>
     <style media="print">
       /* <![CDATA[ */      
@@ -76,321 +105,509 @@
 +-----------------------------+
 | W = 65% -> image horizontal |
 | W = 50% -> image vertical   |
+| W = 50% -> carte SHOM       |
 +-----------------------------+
 -->
 
   <body>
-    
+
+    <div id="title"><div class='box'>
     <h2>
       Yann Ics
       <span style="float:right;font-size:9px;font-style: italic;">
-	Last endpoint – January 20, 2026
+	Last endpoint – February 11, 2026
       </span>
     </h2>
     <h1 style="text-align: center;color:orange;">Journal</h1>
     
+    <input type="button" value="notebook" onclick="showTwo();" id="btn2" />
+    <input type="button" value="logbook" onclick="showOne();" id="btn1" />
+    </div></div>
+
+<div id="yi">    
+<a href="https://yannics.github.io/88b26785.html">https://yannics.github.io/88b26785.html</a>
+</div>
+
     <ol>
       
-      <p>
+      <p class="lg">
 	250727
       </p>
 
-      <li>
+      <li class="lih">
 	Loin de moi cette idée de ne pas avoir vécu pour le plaisir d’un hypothétique lecteur &ndash; ou lectrice &ndash; à propos de ce qui va se jouer ici, et qui, dans l’immensité de l’insignifiance humaine, pourrait en donner ne serait-ce que l’impression que la vie ait un sens.
       </li>
 
-      <li>
+      <li class="lih">
 	Le sens est bien entendu dans l’instant. Se projetait au delà est déjà le début d’un conte; qui au regard de la mémoire de ce que l’on a vécu s’embrume dans les actes manqués pour les uns, et révèle la félicité d’une promesse auto-réalisatrice pour les autres.
       </li>
 
-      <p>
+      <p class="lg">
 	250728
       </p>
      
-      <li>
+      <li class="lih">
 	Quoiqu'il en soit, je rêve des états de conscience autre lorsque je me confontre à l'incompréhension du dessein mercantile dans lequel je me suis englué, faute de ne pouvoir reprogrammer mon cerveau à jamais corrompu. 
       </li>
 
-      <li>
+      <li class="lih">
 	Fuire. La fuite est devenue ma raison d'être. Je ne puis rester là, ou même ailleurs.
       </li>
 
-      <p>
+      <p class="lg">
 	250729
       </p>
       
-      <li>
+      <li class="lih">
 	Fuire. Toujours être ailleurs. Bien qu'il y ait de ces instants <i>hic et nunc</i> sans temps. Une éternité coincée dans les limbes du temps.
       </li>
 
-      <li>
+      <li class="lih">
 	Bref, me voilà le personnage principal de ce conte, dont la maïeutique s'inscrit dans un contexte où la folie ordinaire règne en maître. 
       </li>
 
-      <p>
+      <p class="lg">
 	250810
       </p>
       
-      <li>
+      <li class="lih">
 	Déconstruire. Apprendre. Comprendre. 
       </li>
 
-      <br/>
+      <br class="lg"/>
 
       <p align="center">
-        <img src="img/journal/img1.jpeg" alt="250922 img1 Plouër-sur-Rance chantier naval" style="width: 65%;">
+        <img src="img/journal/img1.jpeg" alt="250922 img1 Plouër-sur-Rance chantier naval" style="width: 65%;" class="nb">
       </p>
       
-      <p>
+      <p class="jdb">
+	250923
+      </p>
+      <div class="note">
+	<span>Plouër-sur-Rance &ndash; Minihic</span><br/>
+	Départ chantier naval Samson et mise à l'eau vers 11h.  
+	Arrivée mouillage de Minihic, trajet au moteur, ancre sur vase et algues. 
+	Première nuit ok.  
+	<br/><span>[250925]</span> 
+	Au deuxième jour je m’aperçois que je dérive. Je reste en alerte l’après-midi. Le soir le courant de marée me fait dériver sérieusement. Je lève l’ancre qui était effectivement saturée d’algues et n’accrochait en fait plus du tout. Je me suis donc amarré plus loin à une bouée visiteur, et ce en pleine nuit.
+      </div>
+      
+      <p class="lg">
 	251002
       </p>
       
-      <li>
+      <li class="lih">
 	Apprendre. Comprendre. Déconstruire.
       </li>
 
-      <li>
+      <li class="lih">
 	Comprendre. Déconstruire. Apprendre. 
       </li>
 
-      <li>
+      <li class="lih">
 	<i>Should I stay or should I go ...</i> De toute façon, je dois être prêt à partir. Je sais que je ne suis pas d'ici. Qu'importe ma destination (<i>there is no future</i>), ma vie est le chemin. <i>Mais les braves gens n'aiment pas que l'on suive une autre route qu'eux.</i> De ce chemin chaotique, parmi un rhizome d'autres chemins, je suis la route qui me paraît la plus raisonnable, la plus confortable, la plus intéressante. Mais il arrive parfois que je me plante. Les choix cornéliens se multiplient. Quoi qu'il arrive, le moment du choix viendra et je le ferai, fatalement.
       </li>
 
-      <p>
+      <p class="lg">
 	251004
       </p>
       
-      <li>
+      <li class="lih">
 	Mais le vent tourne. Dehors, un grand frais, limite un coup de vent. Plein ouest. Pris au piège, me voilà pris à parti dans une confrontation avec mon destin. Décidément, ces nuits sauvages me rappellent l’insignifiance de mon être, et ma résolution résiliente. 
       </li>
 
-      <p>
+      <p class="lg">
 	251007
       </p>
       
-      <li>
+      <li class="lih">
 	Et le vent tourne et se fige. Une nuit de pleine lune, claire, calme, esquisse un nouvel horizon. Je dois jouer avec le temps. Rester serein, pas à pas, tout est possible. Le cap permet la route et multiplie les chances d'arriver là où l'ailleurs sera notre ritournelle.
       </li>
 
+      <p class="jdb">
+	251013
+      </p>
+      <div class="note">
+	<span>Minihic &ndash; écluse du barrage de la Rance &ndash; Saint-Cast-le-Guildo</span><br/>
+	Départ mouillage de Minihic.
+	Arrivée bouée d’attente écluse.
+	Trajet au moteur.
+	<br/><span>[251015]</span> 
+	Passage de l'écluse du barrage de la Rance, du mouillage d’attente sud au mouillage d’attente nord.
+	Trajet à la nuit au moteur vers 7h du matin, arrivée à l'aube.
+	<br/><span>[251017]</span> 
+	Départ vers 9h, au moteur en empruntant le chenal de la grande porte jusqu'au 48.6697°N et 2.1142°O.
+	Puis essaie des voiles. La grand voile n'a pas pu être hisser car je n'ai pas pu gérer tous les paramètres, à savoir le vent, les coulisseaux et/ou la drisse qui se bloquai(en)t, la bôme surelevée sur le premier ris ... Bref, j'ai navigué au génois tout le long avec un cap de 252˚ jusqu'à 1 ou 2 miles du port de Saint-Cast-le-Guildo. J'avais envisagé de rester sur une des bouées à côté du port, mais la houle m'en a vite dissuadé. Pourtant j'avais bien galéré à m'y amarrer. Arrivée au port dans l'après-midi.
+      </div>
+      
       <br/>
       
       <p align="center">
-        <img src="img/journal/img2.jpeg" alt="251016 img2 Barrage de la Rance" style="width: 65%;">
+        <img src="img/journal/251013.png" alt="SHOM 48.617446° N, 2.025197° W" style="width: 50%;" class="note">
+      </p>
+
+      <p align="center">
+        <img src="img/journal/img2.jpeg" alt="251016 img2 Barrage de la Rance" style="width: 65%;" class="nb">
       </p>
       
       <p align="center">
-        <img src="img/journal/img3.jpeg" alt="251017 img3 > Saint-Cast-le-Guildo" style="width: 65%;">
+        <img src="img/journal/img3.jpeg" alt="251017 img3 > Saint-Cast-le-Guildo" style="width: 65%;"  class="nb">
       </p>
 
-      <p>
+      <p class="jdb">
+	251019
+      </p>
+      <div class="note">
+	<span>Saint-Cast-le-Guild &ndash; Paimpol</span><br/>
+	Départ vers 11h. Mer difficile, et à contre-courant (coefficient de marée de 79) avec une houle plutôt courte d'environ 2m tout l'après-midi pour une arrivée à l'écluse de Paimpol à l'étale de marée haute.
+	Passage de la pointe de Saint-Cast, de la Latte et du Cap Fréhel à plus d'un mile jusqu'au  48.7039°N et 2.2965°O au moteur. Cap plein Ouest pour passer au sud du phare du Grand Léjon, puis cap 284˚ au passage du phare jusqu'au chenal de la Jument au tourmentin. Entrée Anse de Paimpol au moteur jusqu'au port.
+      </div>
+      
+      <p class="lg">
 	251021
       </p>
       
-      <li>
+      <li class="lih">
 	Après avoir traversé la baie de Saint-Brieuc dimanche dernier avec une bonne brise et des rafales de plus de 30 nœuds plein sud, ce qui m'a pris environ 5 heures avec la voile d'avant format tourmentin (ayant un génois sur enrouleur), avec des creux et des crêtes faisant gîter le navire d'un bord à l'autre, je dois dire que je n'ai pas lâché la barre. Le pilote automatique partait aux fraises de toute façon. Je me suis donc retrouvé à Paimpol, non sans surprise, car c'était précisément l'escale que j'avais planifiée. Bref, je disais après avoir... et même pendant, la nature s'est révélée, bien plus puissante et présente durant les pics critiques et les accalmies, aux couleurs et aux reflets insoupçonnés, indescriptibles &ndash; bien que ce soit exactement l'objet de l'écrivant... de décrire.
       </li>
 
-      <li>
+      <li class="lih">
 	Le bleu du ciel fendait les nuages gris, un bleu comme je n'en ai encore jamais vu, ou devrais-je dire encore jamais ressenti. Un arc-en-ciel droit, qui a oublié d'être un arc, se dressait entre les îlots qui imposaient leurs silhouettes, comme des arbres minéraux que l'on ne peut toucher. 
       </li>
 
-      <li>
+      <li class="lih">
 	La nature a la faculté de nous surprendre là où nous prenons le temps de la contempler, pour nous rappeler à notre propre existence, non comme individu, mais comme une interaction, une invitation à être, sans que l'on sache vraiment pourquoi. 	
       </li>
 
-      <br/>
+      <br class="lg" />
       
       <p align="center">
-        <img src="img/journal/img4.jpeg" alt="251107 img4 Paimpol port" style="width: 65%;">
+        <img src="img/journal/img4.jpeg" alt="251107 img4 Paimpol port" style="width: 65%;" class="nb">
+      </p>
+
+      <!--
+      <p align="center">
+        <img src="img/journal/img5.jpeg" alt="251111 img5 Paimpol école abandonnée" style="width: 65%;" class="nb">
+      </p>
+      -->
+
+      <p class="jdb">
+	251113
+      </p>
+      <div class="note">
+	<span>Paimpol &ndash; port Blanc</span><br/>
+	Belle journée au portant avec un vent de 10 à 15 nœuds, toutes voiles dehors (avec la grand voile bloquée sur le premier ris), avec configuration en ciseaux plutôt réussie sur la durée. Petite moyenne autour de 5 nœuds. 5/6 heures de navigation en contournant l'île de Bréhat, et avec le courant dans l'après-midi. Je garde toujours une distance d'au moins 1 mile des zones à risque, autant que possible.
+      </div>    
+
+      <br class="lg" />
+      
+      <p align="center">
+        <img src="img/journal/img6.jpeg" alt="251113 img6 > port Blanc" style="width: 50%;" class="nb">
       </p>
 
       <p align="center">
-        <img src="img/journal/img5.jpeg" alt="251111 img5 Paimpol école abandonnée" style="width: 65%;">
+        <img src="img/journal/img7.jpeg" alt="251114 img7 port Blanc mouillage" style="width: 65%;" class="nb">
       </p>
 
+      <p class="jdb">
+	251117
+      </p>
+      <div class="note">
+	<span>port Blanc &ndash; Perros-Guirec</span><br/>
+	Une mauvaise météo en prévision sur la semaine me décide à rejoindre le port de Perros-Guirec ce jour même. Environ une heure et demie de navigation à contre-courant (coefficient 69) pour une arrivée au port vers 16h au génois, à l'ouverture du bassin qui se fait à marée haute. Passage délicat à la sortie du mouillage de Port Blanc au niveau des rochers autour de l'île du Château Neuf avec un courant qui avait tendance à m'y pousser.
+      </div>
+      
       <p align="center">
-        <img src="img/journal/img6.jpeg" alt="251113 img6 > port Blanc" style="width: 50%;">
+        <br/>
+        <img src="img/journal/251117.png" alt="SHOM 48.841953° N, 3.314674° W" style="width: 50%;" class="note">
       </p>
 
-      <p align="center">
-        <img src="img/journal/img7.jpeg" alt="251114 img7 port Blanc mouillage" style="width: 65%;">
-      </p>
-
-      <p>
+      <p class="lg">
 	251117
       </p>
       
-      <li>
+      <li class="lih">
 	Le temps se rappelle à moi, comme pour chaque jour en mer apportant son lot de singularités, un fragment d'éternité. 
       </li>
 
-      <br/>
+      <br class="lg" />
 
       <p align="center">
-        <img src="img/journal/img8.jpeg" alt="251117 img8 Perros-Guirec port" style="width: 65%;">
+        <img src="img/journal/img8.jpeg" alt="251117 img8 Perros-Guirec port" style="width: 65%;" class="nb">
       </p>
 
-      <p>
+      <p class="lg">
 	251119
       </p>
       
-      <li>
+      <li class="lih">
 	Et se dérobe à quai. Par vent frais.
       </li>
       
-      <li>
+      <li class="lih">
 	Je me demande à quel point ma prose peut être lue et comprise. Il ne s'agit pas là pour moi de convaincre, mais de véhiculer l'idée par des mots... bien que ce soient les mots qui véhiculent l'idée, ma vérité, mes convictions, voire mes espérances.
       </li>
 
-      <p>
+      <p class="lg">
 	251122
       </p>
       
-      <li>
+      <li class="lih">
 	J'avoue que sur mes espérances, cela reste vain. Quant au reste, l'image du monde qui m'est renvoyée par l'humain (entendu comme civilisation à sociétés de masse (je rappelle que nous ne sommes pas des fourmis)) me fait regretter d'en faire partie. Nous avons failli. Encore faut-il le reconnaître. <i>Ce n'est pas un monde que j'aime.</i>
       </li>
       
-      <li>
+      <li class="lih">
 	Et je le quitterai sans regret.
       </li>
       
-      <li>
+      <li class="lih">
 	Et je ne le quitterai qu'avec le regret d'y être né.
       </li>
       
-      <li>
+      <li class="lih">
 	Cela dit, j'ai hâte de larguer les amarres vers de nouvelles aventures avec lesquelles je sais que l'on peut encore s'emerveiller. 
       </li>
 
-      <p>
+      <p class="lg">
 	251125
       </p>
       
-      <li>
+      <li class="lih">
 	Quand les éléments vous poussent et vous retiennent, je ne sais quoi penser. Je poursuis ma route, un peu contre vents et marées, littéralement. Je ne puis rester. Toujours la même ritournelle. Là il va falloir que je lutte. 
       </li>
      
-      <p>
+      <p class="jdb">
+	251126
+      </p>
+      <div class="note">
+	<span>Perros-Guirec &ndash; Roscoff </span><br/>
+        Navigation au près cap 260˚ avec un vent de sud-ouest de 10 nœuds. Au moment de virer de bord au  48.8363°N et 3.7639°O, je perds le contrôle du bateau, car je n'ai pas su gérer la barre, la grand voile, le génois, le vent et la houle pour la manœuvre. J'ai donc affalé la grand voile, et au moment d'enrouler le génois, celui-ci se bloque. Il a fallu tant bien que mal finir de l'enrouler à la main, pour finir la navigation au moteur directement cap sur Roscoff. J'avais le courant avec moi, arrivée au port à l'étale de marée basse. Je suis passé devant l'île Tomé par  48.8357°N et 3.4339°O en partant de Perros-Guirec, puis devant les Sept-Îles avant de hisser les voiles.
+      </div>
+      
+      <p class="lg">
 	251126
       </p>
       
-      <li>
+      <li class="lih">
 	Chaque sortie en mer me réconcilie avec la vie.
 Le ciel pastel, la luminosité, les embruns, dit comme cela, cela paraît d'une platitude abyssale, un cliché éculé ... et pourtant. L'émerveillement, la découverte et l'instant dans son unicité restent un moment fort à vivre; une renaissance. 
       </li>
 
-      <p>
+      <p class="lg">
 	251203
       </p>
       
-      <li>
+      <li class="lih">
         Roscoff. Là, se dresse à l'horizon un challenge d'envergure, puisqu'il s'agit de passer la pointe bretonne. La mer d'Iroise. Du moins, s'y préparer. Le challenge est de taille en cette saison, car tous les éléments se déharmonisent &ndash; du moins de mon dessein &ndash;, me contraignant à rester là où je suis. Cela fait déjà une semaine. J'aurais voulu pousser jusqu'à l'Aber Wrac'h. 
       </li>
 
-      <li>
+      <li class="lih">
         C'est comme qui dirait <i>wait and see</i>, si je puis m'exprimer ainsi.
       </li>
       
-      <li>
+      <li class="lih">
         Méditer et observer, pour le dire autrement.
       </li>
 
-      <p>
+      <p class="lg">
 	251206
       </p>
       
-      <li>
+      <li class="lih">
         Lorsque l’on entend chanter les cornemuses à travers le vent, bien plus que la Bretagne, c’est l’esprit celtique, sans doute du Finistère Nord, qui vous reconnecte avec l’endroit où vous êtes.
       </li>
 
-      <p>
+      <p class="lg">
 	251211
       </p>
       
-      <li>
+      <li class="lih">
         Pour le reste, la dissonance cognitive prend le dessus, comme un automatisme atavique, une résignation existentielle. Du darwinisme social : tu t’adaptes ou tu meurs.
       </li>
 
-      <p>
+      <p class="lg">
 	251217
       </p>
       
-      <li>
+      <li class="lih">
         Vivre libre ou mourir.
       </li>
 
-      <br/>
+      <p class="jdb">
+	251231
+      </p>
+      <div class="note">
+	<span>Roscoff &ndash; l'Aber Wrac'h</span><br/>
+        Navigation au portant avec une petite brise. Sur un conseil, qui en vaut probablement un autre, j'ai passé une annonce sur le site bourse aux équipiers pour convoyer le bateau jusqu'à Guidel. Je pense qu'un coup de main pourrait m'être profitable à tout point de vue. Louise et Nicolas ont répondu et m'ont donc rejoint. Nicolas a pu régler la bôme de grand voile et profiter ainsi de toute sa surface. Tentative de hisser le spi, en vain, car pas de balancine (ni hale-bas) de tangon, de plus aucun des tangons (il y en a deux à bord) n'est opérationnel (bloqué au niveau des machoires). Nous avons contourné l'île de Batz puis cap plein ouest jusqu'à l'Aber Wrac'h. Arrivée au port par le grand chenal via le Libenter.
+      </div>
       
       <p align="center">
-        <img src="img/journal/img9.jpeg" alt="251231 img9 > l&apos;Aber Wrac&apos;h" style="width: 65%;">
+        <img src="img/journal/img9.jpeg" alt="251231 img9 > l&apos;Aber Wrac&apos;h" style="width: 65%;" class="nb">
       </p>
       
+      <p class="jdb">
+	260101
+      </p>
+      <div class="note">
+	<span>l'Aber Wrac'h &ndash; l'Aber Benoit</span><br/>
+        Petite navigation d'environ 2 heures au près et dernière avec Louise et Nicolas (pour cause de météo trop difficile pour aller plus loin) jusqu'à l'Aber Benoit. Après avoir contourné le Libenter jusqu'au 48.6218°N et 4.6331°O, nous avons navigué plein ouest vent debout (10 à 15 nœuds) et à contre-courant (un peu plus d'un nœud, estimé à 3 nœuds par Nicolas au plus fort). Nicolas à la barre a pu pousser le loch jusqu'à plus de 10 nœuds. Entrée dans l'aber depuis 48.6237°N et 4.6712°O jusqu'au mouillage sur bouées.
+      </div>
+      
       <p align="center">
-        <img src="img/journal/img10.jpeg" alt="260101 img10 > l&apos;Aber Benoit" style="width: 65%;">
+        <img src="img/journal/img10.jpeg" alt="260101 img10 > l&apos;Aber Benoit" style="width: 65%;" class="nb">
       </p>
 
-      <p>
+      <p class="lg">
 	260108
       </p>
       
-      <li>
-	Après une tentative de sortie avortée à Roscoff le jeudi 25 décembre due à un ressac que je n'avais pas prévu à l'entrée du port, la deuxième le mercredi 31 décembre fut une navigation plutôt relax, ce qui nous a permis de régler la grand voile jusqu'à l'Aber Wrach'. Le jour d'après, nous avons poussé vers l'Aber Benoît contre vent et marée qui ma foi fut plutôt instructif sur les performances et les limites du bateau. Bref, encore une longue escale qui se profile au pied du passage du Four, dont il va falloir attendre les conditions idéales pour rejoindre pour le moins l'Aber Ilbut.
+      <li class="lih">
+	Après une tentative de sortie avortée à Roscoff le jeudi 25 décembre due à un ressac que je n'avais pas prévu à l'entrée du port, la deuxième le mercredi 31 décembre fut une navigation plutôt relax, ce qui nous a permis de régler la grand voile jusqu'à l'Aber Wrac'h. Le jour d'après, nous avons poussé vers l'Aber Benoît contre vent et marée qui ma foi fut plutôt instructif sur les performances et les limites du bateau. Bref, encore une longue escale qui se profile au pied du passage du Four, dont il va falloir attendre les conditions idéales pour rejoindre pour le moins l'Aber Ilbut.
       </li>
-      <li>
+      <li class="lih">
 	À partir de Roscoff, j'avais décidé de me faire aider afin de faire face aux difficultés de manœuvre que je pourrais rencontrer dans certaines situations que je ne maîtrisais pas encore, notamment aux abords de la mer d'Iroise. J'avoue que l'expérience avec un équipage m'a laissé perplexe quant à ma capacité à interagir avec mes contemporains. Les relations sociales me dépassent, m'exaspèrent, autant que l'expérience induite qui nous a sans aucun doute élevés malgré nous. Malgré tout, je reste confus sur mes ressorts à poursuivre seul ou non. 
       </li>
-      <li>
+      <li class="lih">
 	Ce soir nous attendons la tempête Goretti avec des vents de 40 noeuds et des rafales de 66 noeuds. Une indicible force m'a poussé à terre. Un mélange de sagesse peut être ou de prudence sûrement car je ne suis pas familier de l'endroit, ni des conséquences de tels vents. Bref, ce sursaut survint dans la nuit vers 1h du matin et profitant de l'étale de la marée basse, je regagnai la rive. Échouage au milieu des parcs à huitres, je finis l'accostage les pieds dans la vase, dont je m'extraie péniblement et à bout de souffle. Plus tard, le patron du lieu m'accueille plutôt bien au point de me trouver un coin à l'abri, chauffé et au sec, avec vue sur l'Aber et le Ty Err 1.
       </li>
       
-      <br/>
+      <br class="lg" />
       
       <p align="center">
-        <img src="img/journal/img11.jpeg" alt="260108 img11 Prat ar Coum" style="width: 65%;">
+        <img src="img/journal/img11.jpeg" alt="260108 img11 Prat ar Coum" style="width: 65%;" class="nb">
       </p>
-      
-      <p>
+
+      <p class="lg">
 	260120
       </p>
       
-      <li>
+      <li class="lih">
 	<span>[260117]</span> Cette fin de journée, calme sur l’étale de la pleine mer et ensoleillée, m’invita à consulter la météo pour les jours suivants. Et là, la prévision pour le lendemain affiche le même temps avec un vent de nord-nord-est. Je réalisai que c’était le moment que j’attendais pour passer le phare du Four, vers la mer d’Iroise. Je passai littéralement la nuit à préparer le départ, que je devais prendre à l’aube nautique, soit vers 8 h pour profiter du courant de jusant annoncé à 2,2 nœuds pour un coefficient de 69, jusqu’au port de l’aber Ildut.
       </li>
       
-      <br/>
+      <br class="lg" />
+      
       <p align="center">
-        <img src="img/journal/img12.jpeg" alt="260117 img12 l&apos;Aber Benoit mouillage" style="width: 50%;">
+        <img src="img/journal/img12.jpeg" alt="260117 img12 l&apos;Aber Benoit mouillage" style="width: 50%;" class="nb">
       </p>    
       
-      <li>
-	<span>[260118]</span> Le jour J, la visibilité est limitée, si bien que je prends un peu de retard au départ. Il y a peu de vent, entre 3 et 8 nœuds au portant, 12 en rafales avec une houle d’ouest de 2,2 m pour une période de 10 s. Difficile de maintenir une moyenne suffisante, d’autant plus que l’enrouleur de génois s’est une fois de plus bloqué (cela s’était déjà produit sur le trajet vers Roscoff), et avec la houle, pas de pilote automatique, pas de manœuvre sur le pont. J’ai donc opté de rester au moteur tout le long avec la grand-voile en soutien. Pas sûr qu’avec le génois, cela aurait eu un impact suffisant sur ma moyenne. Cela n’a pas empêché quelques dauphins de me rendre visite, de me suivre ou de m’accompagner (difficile d’en savoir plus sur leur intention) sur la première moitié du voyage. L’entrée en mer d’Iroise fut une grande satisfaction, ainsi que l’arrivée au port de l'Aber Ildut avec un peu moins d’une heure de retard sur mes prévisions.
+      <li class="lih">
+	<span>[260118]</span> Le jour J, la visibilité est limitée, si bien que je prends un peu de retard au départ. Il y a peu de vent, entre 3 et 8 nœuds au portant, 12 en rafales avec une houle d’ouest de 2,2 m pour une période de 10 s. Difficile de maintenir une moyenne suffisante, d’autant plus que l’enrouleur de génois s’est une fois de plus bloqué (cela s’était déjà produit sur le trajet vers Roscoff), et avec la houle, pas de pilote automatique, pas de manœuvre sur le pont. J’ai donc opté pour rester au moteur tout le long avec la grand-voile en soutien. Pas sûr qu’avec le génois, cela aurait eu un impact suffisant sur ma moyenne. Cela n’a pas empêché quelques dauphins de me rendre visite, de me suivre ou de m’accompagner (difficile d’en savoir plus sur leur intention) sur la première moitié du voyage. L’entrée en mer d’Iroise fut une grande satisfaction, ainsi que l’arrivée au port de l'Aber Ildut avec un peu moins d’une heure de retard sur mes prévisions.
       </li>
+ 
+      <p class="jdb">
+	260118
+      </p>
+      <div class="note">
+	<span>l'Aber Benoit &ndash; l'Aber Ildut</span><br/>
+        <!-- Voir notebook <span style="color:#AD6C32;font-size:10px;font-weight:normal">260120 35. [260118]</span><br/> -->
+        À la sortie de l'Aber Benoît, j'ai voulu passer du côté de l'île Trevors, mais le passage au milieu d'écueils m'est apparu trop ténu et j'ai opté pour reprendre le chenal par lequel nous étions arrivés (à l'est de Men Renead). J'ai navigué avec le courant de jusant pour arriver à l'étale de marée basse au niveau du phare du Four et avant la renverse au niveau de l'Aber Ildut.
+      </div>
       
-      <br>
+      <br class="lg" />
+
       <p align="center">
-	<img src="img/journal/img13.jpeg" alt="260118 img13 > l'Aber Ildut" style="width: 65%;">
+        <img src="img/journal/260118.png" alt="SHOM 48.585860° N, 4.629257° W" style="width: 50%;" class="note">
       </p>
 
-      <p>
-	251206
+      <p align="center">
+	<img src="img/journal/img13.jpeg" alt="260118 img13 > l'Aber Ildut" style="width: 65%;" class="nb">
+      </p>
+
+      <p class="lg">
+	260128
       </p>
       
-      <li>
+      <li class="lih">
 	Quelques jours plus tard, la tempête Ingrid frappe de plein fouet le Finistère ouest avec des vents de plus de 70 nœuds au plus fort de la nuit du vendredi 23 au samedi 24 janvier, et des vagues de 6 mètres en mer. D’aucuns croieront que les dépressions me suivent ou que je les provoque. Pour ma part ce ne sont que les symptômes du réchauffement climatique dans une région particulièrement exposée (voir le nombre de dépressions subies cet hiver dans la région ouest de la Manche et de la Bretagne avant et après ces événements en peu plus venteux que les autres), et il est probable que cela empire au fil du temps; ce qui peut induire un état dépressif. 
       </li>
-      <li>
+      <li class="lih">
 	Cette fois, j’ai passé la tempête à bord et à quai. Bien que le port de l’Aber Ildut soit bien abrité, je n’ai pas fermé l’œil de la nuit tant le bateau a laceté et tangué au gré des coups de vent, des vagues et du courant.
+      </li>
+
+      <p class="lg">
+	260212
+      </p>
+      
+      <li class="lih">
+	D'un conte je suis parti, sans protagoniste, vers un ailleurs qui se dérobe sans cesse. J'en suis réduit à la ritournelle qui a motivé ce que j'écris : mettre les voiles. C'est une aventure en soi. Et malgré des escales qui s'étirent dans le temps et avec le temps, les dépressions défilent, s'enchaînent et soufflent comme jamais. Les accalmies sont rares, et plus encore les vents, les courants, la houle qui pourraient m'être favorables. Je n'ai pas la force et l'expérience de lutter. De toute façon, j'ai l'impression que je suis le seul à naviguer, même s'il m'arrive parfois de croiser un voilier ou un pêcheur lors de mes péripéties navales. <i>Parfois je rêve, je divague. Je vois des vagues.</i> Et je suis bien. Je suis là où je dois être, sans aucun doute. En attendant d'être ailleurs. 
       </li>
       
     </ol>
     
     <script>
-       function scrollToBottom() {
-           window.scrollTo(0, document.body.scrollHeight);
-       }
-       history.scrollRestoration = "manual";
-       window.onload = scrollToBottom;
+/* function scrollToBottom() { window.scrollTo(0, document.body.scrollHeight) }
+   history.scrollRestoration = "manual";
+   window.onload = scrollToBottom; */
+
+var elements = document.getElementsByClassName('note');
+var jdbs = document.getElementsByClassName('jdb');
+var lgs = document.getElementsByClassName('lg');
+var imgs = document.getElementsByClassName('nb');
+var lihs = document.getElementsByClassName('lih');
+
+for (var i = 0; i < lihs.length; i++) {lihs[i].setAttribute("hidden", "hidden")}
+			  
+function showOne() {
+    for (var i = 0; i < elements.length; i++) {
+	if(elements[i].style.display == "block" )
+	{
+	    elements[i].style.display = "none";
+	    document.getElementById("btn1").style.color="black";
+	}
+	else
+	{
+	    elements[i].style.display = "block";
+	    document.getElementById("btn1").style.color="orange";
+	}
+    }
+    for (var i = 0; i < jdbs.length; i++) {
+	if(jdbs[i].style.display == "block" )
+	{
+	    jdbs[i].style.display = "none";
+	}
+	else
+	{
+	    jdbs[i].style.display = "block";
+	}
+    }
+}
+
+function showTwo() {
+    for (var i = 0; i < lgs.length; i++) {
+	if(lgs[i].style.display == "block" )
+	{
+	    lgs[i].style.display = "none";
+	    document.getElementById("btn2").style.color="black";
+	}
+	else
+	{
+	    lgs[i].style.display = "block";
+	    document.getElementById("btn2").style.color="orange";	    
+	}
+    }
+    for (var i = 0; i < imgs.length; i++) {
+	if(imgs[i].style.display == "block" )
+	{
+	    imgs[i].style.display = "none";
+	}
+	else
+	{
+	    imgs[i].style.display = "block";
+	}
+    }
+    for (var i = 0; i < lihs.length; i++) {
+	let hidden = lihs[i].getAttribute("hidden");
+	if(!hidden)
+	{
+	    lihs[i].setAttribute("hidden", "hidden");
+	}
+	else
+	{
+	    lihs[i].removeAttribute("hidden");	    
+	}
+    }   
+}
     </script>
 
     <br/>
