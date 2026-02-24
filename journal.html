@@ -84,6 +84,13 @@
 	  padding: 5px;
       }
 
+      #shin {
+	  height: 346px;
+	  width: 100%;
+	  border-radius: 5px;
+	  box-shadow: inset 0px 0px 24px 9px rgba(2,2,2,0.8);
+      }
+      
       #yi { margin-top: 135px; }
       
       b { background-color: red; color: yellow; font-weight: normal;}
@@ -101,13 +108,16 @@
   
 <!--
 <p align="center">
-  <img src="img/journal/imgN.jpeg" alt="imgN" style="width: W%;">
+  <img src="img/journal/imgN.jpeg" alt="A" style="width: W%;" class="C" >
 </p>
-+-----------------------------+
-| W = 65% -> image horizontal |
-| W = 50% -> image vertical   |
-| W = 50% -> carte SHOM       |
-+-----------------------------+
++-----+------------------+------+---------------+---------------------------------+
+|  W  | type             | C    | I             | A                               |             
++-----+------------------+------+---------------+---------------------------------+
+| 65% | image horizontal | nb   | imgN.jpeg     | timestamp imgN                  |
+| 50% | image vertical   | nb   | imgN.jpeg     | timestamp imgN                  |
+| 50% | carte SHOM       | note | timestamp.png | SHOM GPS                        |
+| 90% | screenshot info  | note | timestamp.png | timestamp titre [(&opt) - link] |
++-----+------------------+------+---------------+---------------------------------+
 -->
 
   <body>
@@ -130,6 +140,12 @@
       <a href="https://yannics.github.io/88b26785.html">https://yannics.github.io/88b26785.html</a>
     </div>
     
+<div id="shin" class="note">
+      <p align="center">
+        <img src="img/journal/780673.jpg" alt="Tableau synoptique - Marée/Tide" style="width:100%;height:346px;border-radius:6px;position:relative;z-index:-2;" class="note">
+      </p>
+</div>
+
     <ol>
       
       <p class="lg">
@@ -532,10 +548,14 @@ Le ciel pastel, la luminosité, les embruns, dit comme cela, cela paraît d'une 
       <p align="center">
         <img src="img/journal/260219.png" alt="260219 Bilan météo - https://youtu.be/W7-Xsj4uz2w?si=-R7LB0b-szLC5z0L&t=512" style="width: 90%;" class="note">
       </p>
-      
+
     </ol>
     
     <script>
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+
 /* function scrollToBottom() { window.scrollTo(0, document.body.scrollHeight) }
    history.scrollRestoration = "manual";
    window.onload = scrollToBottom; */
@@ -602,6 +622,9 @@ function showThree() {
 	}
     }  
 }
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
     </script>
 
     <br/>
