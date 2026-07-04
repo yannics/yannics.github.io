@@ -11,18 +11,6 @@
     <title>Journal</title>
     <style>
       
-      /* https://stackoverflow.com/questions/16156225 */
-      .visibledevice { display:none; }
-      .visibledesktop { display:block; }
-      
-      @media only screen
-   and (min-device-width : 320px)
-   and (max-device-width : 480px)
-      {
-	  .visibledevice { display:block; }
-	  .visibledesktop { display:none; }
-      }
-
       body {
 	  background-color: #222;
 	  font-size: 11px;
@@ -142,12 +130,6 @@
 -->
 
   <body>
-
-<div class="visibledevice" style="text-align: center;">
-    <img src="img/noway.png" alt="---------------" width="300">
-</div>
-
-<div class="visibledesktop">
 
     <div id="title"><div class='box'>
     <h2>
@@ -837,8 +819,6 @@ function showThree() {
     </script>
 
     <br/>
-
-</div>
 
   </body>
   
